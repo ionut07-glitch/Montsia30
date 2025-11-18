@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Log in</title>
+    <link rel="stylesheet" href="Log in.css">
+</head>
+
+<body>
+    <h1>Inicia sessió</h1>
+    <br>
+    <form action="/processar_login" method="post" onsubmit="return Correu() && Contrasenya()">
+
+        <label for="correu">Correu electrònic:</label>
+        <input type="text" id="correu" name="correu" placeholder="exemple@montsia30.net" required>
+        <br>
+
+        <label for="contrasenya">Contrasenya:</label>
+        <input type="password" id="contrasenya" name="contrasenya" required>
+        <br>
+
+        He oblidat la meva <a href="Contrasenya.html">contrasenya</a>
+        <br><br>
+
+        Recordar-me <input type="checkbox" id="remember_me" name="remember_me">
+        <br><br>
+
+        <input type="submit" value="Iniciar sessió">
+
+        <input type="submit" value="Registrar-se">
+        <a href="Sign in.html"></a>
+       
+        </input>
+
+
+    </form>
+
+    <script src="Log in.js"></script>
+
+</body>
+
+</html>
