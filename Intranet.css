@@ -1,0 +1,115 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #9c9c9c;
+    width: 175.8vh;
+    height: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2vh 2vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 1.5vh;
+}
+
+.header-top img {
+    width: 18vh;
+    height: auto;
+    margin-top: -2vh;
+    margin-left: -2vh;
+}
+
+.header-top h1 {
+    margin-left: -2vh;
+    margin-top: 1vh;
+    color: white;
+}
+
+.header-links {
+    display: flex;
+    gap: 2vh;
+    margin-top: -1vh;
+    margin-left: 104vh;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+.header-links a.active {
+    color: #ccc;
+    cursor: default;
+    pointer-events: none;
+    text-decoration: underline;
+}
+
+.content {
+    flex: 1;
+}
+
+footer {
+    background-color: #9c9c9c;
+    color: white;
+    padding: 1.32vh;
+    display: flex;
+    gap: 1vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer h2 {
+    font-size: 2vh;
+    margin-left: 0vh;
+}
+
+footer img {
+    width: 20vh !important;
+    height: 6vh !important;
+    margin-top: 0vh;
+    margin-left: 75vh;
+}
+.container {
+    display: flex;
+    align-items: center;   
+    gap: 80px;            
+    margin: 20px;
+}
+
+.search-group,
+.select-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-group input {
+    height: 30px;
+}
+
+.search-group button,
+.select-group select {
+    height: 34px;
+}
