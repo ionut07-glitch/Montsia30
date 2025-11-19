@@ -1,0 +1,249 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #9c9c9c;
+    width: 175.8vh;
+    height: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2vh 2vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 1.5vh;
+}
+
+.header-top img {
+    width: 18vh;
+    height: auto;
+    margin-top: -2vh;
+    margin-left: -2vh;
+}
+
+.header-top h1 {
+    margin-left: -2vh;
+    margin-top: 1vh;
+    color: white;
+}
+
+.header-links {
+    display: flex;
+    gap: 2vh;
+    margin-top: -1vh;
+    margin-left: 103vh;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+.header-links a.active {
+    color: #ccc;
+    cursor: default;
+    pointer-events: none;
+    text-decoration: underline;
+}
+
+.content {
+    flex: 1;
+}
+
+footer {
+    background-color: #9c9c9c;
+    color: white;
+    padding: 1.32vh;
+    display: flex;
+    gap: 1vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer h2 {
+    font-size: 2vh;
+    margin-left: 0vh;
+}
+
+footer img {
+    width: 20vh !important;
+    height: 6vh !important;
+    margin-top: 0vh;
+    margin-left: 75vh;
+}
+
+
+/* ESTILS GENERALS */
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+body {
+    background-color: white;
+}
+
+body {
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* El contenidor principal (si l'utilitzes per embolicar el títol i el form a la pàgina de login) */
+
+.main-content {
+    flex-grow: 1;
+    /* Ocupa tot l'espai vertical restant */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centratge vertical */
+    align-items: center;
+    /* Centratge horitzontal */
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    /* Centratge horitzontal del text */
+}
+
+
+/* ======================================= */
+
+
+/* 📄 ESTILS DE FORMULARI/QUADRE DE CONNEXIÓ (LOGIN) */
+
+
+/* ======================================= */
+
+
+/* Aquest estil s'aplicarà al quadre de connexió (ja sigui <form> o #login-box) 
+   i centra horitzontalment el quadre a través de 'margin: auto;' */
+
+form,
+#login-box {
+    /* Utilitza #login-box si el quadre no és un <form> */
+    margin: 20px auto;
+    /* Centrat horitzontal + marge superior/inferior */
+    width: 450px;
+    /* Amplada fixa per a una millor aparença de formulari */
+    border: 1px solid darkgray;
+    /* Borda al voltant del quadre */
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/* ======================================= */
+
+
+/* 🔍 ESTILS PER A LA PÀGINA INTRANET (CERCA I SELECTS) */
+
+
+/* ======================================= */
+
+
+/* S'aplica només al div amb class="container" de la pàgina Intranet, 
+   **EVITANT** el header i el footer, arreglant el teu problema inicial. */
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px auto;
+    /* Centrar horitzontalment el contenidor Intranet */
+    width: 80%;
+    /* O l'amplada que prefereixis per al teu contingut */
+    box-sizing: border-box;
+}
+
+
+/* Estils per als grups de cerca/selecció */
+
+.search-group,
+.select-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+/* Estil per a la lupa (🔍) */
+
+.lupa {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+
+/* ======================================= */
+
+
+/* 🧱 ESTILS D'ELEMENTS COMUNS (INPUTS, SELECTS, BOTONS) */
+
+
+/* ======================================= */
+
+input[type=text],
+input[type=password],
+select {
+    /* Es va eliminar la duplicació per 'select' */
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit],
+.search-group button {
+    /* Estil aplicat tant a submit com al botó de cerca Intranet */
+    width: 100%;
+    /* Si vols que el botó de login ocupi el 100% de l'ample del form */
+    background-color: #8c8c8c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover,
+.search-group button:hover {
+    background-color: #7a7a7a;
+    /* Un color lleugerament més fosc per a l'efecte hover */
+}
+
+input::placeholder {
+    color: black;
+}
