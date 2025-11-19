@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="Sign in.css">
+    <link rel="stylesheet" href="C:\Users\Apla\Desktop\Cas1\Cas1\styles\header_footer.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-top">
+            <img src="C:\Users\Apla\Desktop\Cas1\Cas1\pictures\Logo_Logo_50anys_menut_blau.png" alt="Logo Montsia30">
+            <h1>Montsia30</h1>
+            <nav class="header-links">
+                <a href="index.html">Inici</a>
+                <a>Digitalització</a>
+                <a href="sostenibilitat.html">Sostenibilitat</a>
+                <a href="intranet.html">Intranet</a>
+            </nav>
+        </div>
+    </header>
+
+    <h1>Registra't</h1>
+    <br>
+    <form onsubmit="return registrarse()">
+
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required>
+        <br>
+
+        <label for="correu">Correu electrònic:</label>
+        <input type="text" id="correu" name="correu" placeholder="exemple@montsia30.net" required>
+        <br>
+
+        <label for="contrasenya">Contrasenya:</label>
+        <input type="password" id="contrasenya" name="contrasenya" required>
+        <br>
+
+        <label for="confirmar_contrasenya">Confirmar contrasenya:</label>
+        <input type="password" id="confirmar_contrasenya" name="confirmar_contrasenya" required>
+        <br>
+
+        Accepto els termes i conficions <input type="checkbox" id="termes" name="termes" required>
+        <br><br>
+
+        <input type="submit" value="Registra't">
+
+        <p>No tens compte? </p><a href="C:\Users\Apla\Desktop\Cas1\Cas1\Log in\Log in.html">
+            <p>Inicia sessió</p>
+        </a>
+
+        </input>
+
+
+    </form>
+
+    <script src="Sign in.js"></script>
+
+    <footer>
+        <h2>©MONTSIA30 - Avinguda Catalunya n34, Amposta - 642651912 - info@insmontsia.net</h2>
+        <img src="C:\Users\Apla\Desktop\Cas1\Cas1\pictures\icono-removebg-preview.png" alt="Xarxes socials">
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="Log in.css">
+    <link rel="stylesheet" href="C:\Users\Apla\Desktop\Cas1\Cas1\styles\header_footer.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-top">
+            <img src="C:\Users\Apla\Desktop\Cas1\Cas1\pictures\Logo_Logo_50anys_menut_blau.png" alt="Logo Montsia30">
+            <h1>Montsia30</h1>
+            <nav class="header-links">
+                <a href="index.html">Inici</a>
+                <a>Digitalització</a>
+                <a href="sostenibilitat.html">Sostenibilitat</a>
+                <a href="intranet.html">Intranet</a>
+            </nav>
+        </div>
+    </header>
+
+    <h1>Inicia sessió</h1>
+    <br>
+    <form onsubmit="return iniciarSessio()">
+
+        <label for="correu">Correu electrònic:</label>
+        <input type="text" id="correu" name="correu" placeholder="exemple@montsia30.net" required>
+        <br>
+
+        <label for="contrasenya">Contrasenya:</label>
+        <input type="password" id="contrasenya" name="contrasenya" required>
+        <br>
+
+        He oblidat la meva <a href="Contrasenya.html">contrasenya</a>
+        <br><br>
+
+        Recordar-me <input type="checkbox" id="remember_me" name="remember_me">
+        <br><br>
+
+        <form action="C:\Users\Apla\Desktop\Cas1\Cas1\Forumularis\Formulari digi.html" method="get">
+            <input type="submit" value="Inicia sessió">
+
+
+            <br>
+
+            <p>No tens compte? </p><a href="C:\Users\Apla\Desktop\Cas1\Cas1\Sign in\Sign in.html">
+                <p>Registra't</p>
+            </a>
+
+        </form>
+
+        <script src="Log in.js"></script>
+        <footer>
+            <h2>©MONTSIA30 - Avinguda Catalunya n34, Amposta - 642651912 - info@insmontsia.net</h2>
+            <img src="C:\Users\Apla\Desktop\Cas1\Cas1\pictures\icono-removebg-preview.png" alt="Xarxes socials">
+        </footer>
+
+</body>
+
+</html>
